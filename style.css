@@ -10,6 +10,10 @@ body {
 }
 
 header {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  width: 100vw;
   height: 12vh;
   background-color: white;
 }
@@ -17,6 +21,7 @@ header {
 header .logo {
   float: left;
   width: 45vw;
+  cursor: pointer;
 }
 
 header .logo img {
@@ -57,6 +62,10 @@ header .nav div:hover {
 }
 
 section.contactHeader {
+  z-index: 99;
+  position: fixed;
+  top: 12vh;
+  width: 100vw;
   height: 5vh;
   background-color: #064848;
   cursor: pointer;
@@ -71,37 +80,49 @@ section.contactHeader div {
   cursor: pointer;
 }
 
-main img {
+main {
   position: absolute;
-  top: 0;
-  z-index: -1;
+  top: 17vh;
+  width: 100vw;
 }
 
 main .mainTitle {
-  position: absolute;
-  text-align: center;
-  width: 100vw;
-  padding-top: 25vh;
+  width: 50vw;
+  padding-top: 20vh;
+  padding-left: 10vw;
+  float: left;
 }
 
 main .mainTitle h1 {
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
-  color: white;
-  font-size: 9vh;
-  line-height: 11vh;
+  font-size: 5vh;
+  line-height: 8vh;
   letter-spacing: 0.15vw;
-  text-shadow: 0.25vw 0.25vw black;
+  padding-bottom: 10vh;
+  color: #064848;
+}
+
+main .mainTitle p {
+  font-size: 4vh;
+  line-height: 6vh;
+  color: #064848;
+}
+
+main img {
+  padding-top: 16vh;
 }
 
 section.aboutUs {
+  position: absolute;
+  top: 100vh;
   height: 80vh;
-  margin-top: 83vh;
+  width: 100vw;
   background-color: #E7F6F6;
 }
 
 section.aboutUs .text {
+  float: left;
   padding-left: 10vw;
   padding-top: 20vh;
   width: 40vw;
@@ -116,4 +137,48 @@ section.aboutUs .text h1 {
 section.aboutUs .text p {
   font-size: 3vh;
   color: #064848;
+}
+
+section.aboutUs img {
+  padding-top: 15vh;
+  padding-left: 10vw;
+}
+
+section.service {
+  position: absolute;
+  top: 180vh;
+  width: 100vw;
+  height: 110vh;
+}
+
+section.service .text {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10vh;
+}
+
+section.service h1 {
+  text-align: center;
+  font-size: 5vh;
+  padding-bottom: 6vh;
+  color: #064848;
+}
+
+section.service footer h1 {
+  padding-top: 15vh;
+}
+
+section.service .text p {
+  font-size: 3vh;
+  line-height: 6vh;
+  color: #064848;
+}
+
+section.contact {
+  position: absolute;
+  top: 290vh;
+  width: 100vw;
+  height: 80vh;
+  background-color: #E7F6F6;
 }

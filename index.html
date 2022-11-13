@@ -9,22 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="logo">
+    <header class="header">
+      <div class="logo" onclick="homeScroll()">
         <img src="img/logo.png" alt="logo">
         <div>DMJ Recycling</div>
       </div>
       <div class="nav">
-        <div class="nav1">
+        <div class="nav1" onclick="homeScroll()">
           Home
         </div>
-        <div class="nav2">
+        <div class="nav2" onclick="aboutUsScroll()">
           About Us
         </div>
-        <div class="nav3">
+        <div class="nav3" onclick="serviceScroll()">
           Service
         </div>
-        <div class="nav4">
+        <div class="nav4" onclick="contactScroll()">
           Contact
         </div>
       </div>
@@ -33,7 +33,6 @@
       <div>Contact Us</div>
     </section>
     <main>
-      <img src="img/miedz.jpg" alt="scrap" style="width: 100vw; height: 100vh;"></img>
       <div class="mainTitle">
         <h1>
         <div class="titleLine">
@@ -43,13 +42,43 @@
           Scrap metal <span class="spanMainTitle">&</span> cables
         </div>
         </h1>
+        <p>Free collection</br>Top prices</br>Instant payment</p>
       </div>
+      <img src="img/van.jpg" alt="van" style="height: 50vh; width: 40vh;">
     </main>
     <section class="aboutUs">
       <div class="text">
         <h1>ABOUT US</h1>
-        <p>DMJ RECYCLING LTD is a family run company, where we understood how important are customer service, punctuality and diligence. We are the environmentally friendly company and our goal is to buy scrap metal & cables and then recycle it. We offer free collection service from your place.</p>
+        <p>DMJ RECYCLING LTD is a family run company, where we understood how important are customer service, punctuality and diligence. We are collecting scrap metal and cables that would otherwise be thrown away as trash, which then are turning into new products. We offer free collection service from construction and demolition sites, houses etc. We cover Reading, London, Luton, Gatwick.</p>
       </div>
+      <img src="img/van.jpg" alt="van" style="height: 50vh; width: 40vh;">
     </section>
+    <section class="service">
+      <div class="text">
+        <h1>We buy all type of scrap metal & cables including:</h1>
+        <p>– Aluminium – Copper – Brass</br>– Lead – Stainless Steel – Cables</p>
+      </div>
+      <div class="text">
+        <h1>We provide free collection service from: </h1>
+        <p>– construction sites,</br>– demolition sites,</br>– houses, etc.</p>
+      </div>
+      <footer><h1>We pay top prices and offer instant payment.</h1></footer>
+    </section>
+    <section class="contact">
+
+    </section>
+
+    <script type="text/javascript">
+    function homeScroll() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
+
+    function aboutUsScroll() {
+      document.querySelector(".aboutUs").scrollIntoView({behavior: 'smooth'});
+    }
+    </script>
   </body>
 </html>
