@@ -21,21 +21,12 @@ header {
 header .logo {
   float: left;
   width: 45vw;
-  cursor: pointer;
-}
-
-header .logo img {
-  width: 9vh;
-  height: 9vh;
-  padding-top: 1.5vh;
-  padding-left: 5vw;
-  padding-right: 1vw;
-  float: left;
 }
 
 header .logo div {
   font-size: 6vh;
   line-height: 12vh;
+  padding-left: 10vw;
 }
 
 header .nav div {
@@ -144,41 +135,92 @@ section.aboutUs img {
   padding-left: 10vw;
 }
 
-section.service {
+section.sellToUs {
   position: absolute;
   top: 180vh;
   width: 100vw;
-  height: 110vh;
+  height: 80vh;
 }
 
-section.service .text {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+section.sellToUs .text {
+  width: 40vw;
+  float: right;
+  padding-right: 10vw;
+  color: #064848;
+}
+
+section.sellToUs .text h1 {
+  padding-top: 20vh;
+  font-size: 5vh;
+}
+
+section.sellToUs .text p {
+  padding-top: 3vh;
+  font-size: 3vh;
+}
+
+section.services {
+  position: absolute;
+  top: 260vh;
+  width: 100vw;
+  height: 110vh;
+  background-color: #E7F6F6;
+}
+
+section.services .textContainer {
+  width: 50%;
+  padding-left: 10%;
+}
+
+section.services .text {
   padding-top: 10vh;
 }
 
-section.service h1 {
-  text-align: center;
-  font-size: 5vh;
+section.services h1 {
+  font-size: 4vh;
   padding-bottom: 6vh;
   color: #064848;
 }
 
-section.service footer h1 {
-  padding-top: 15vh;
+section.services footer h1 {
+  text-align: center;
+  padding-top: 10vh;
 }
 
-section.service .text p {
-  font-size: 3vh;
+section.services .text p {
+  font-size: 2.5vh;
   line-height: 6vh;
   color: #064848;
 }
 
 section.contact {
   position: absolute;
-  top: 290vh;
+  top: 370vh;
   width: 100vw;
   height: 80vh;
-  background-color: #E7F6F6;
+  background-color: #064848;
+  color: white;
+}
+
+section.contact .text {
+  width: 81%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15vh;
+}
+
+section.contact .text .left, section.contact .text .middle, section.contact .text .right {
+  float: left;
+  width: 27vw;
+}
+
+section.contact .text h1 {
+  font-size: 4vh;
+  padding-bottom: 5vh;
+}
+
+section.contact .text p {
+  font-size: 3vh;
+  line-height: 7vh;
 }

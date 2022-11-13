@@ -10,19 +10,18 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo" onclick="homeScroll()">
-        <img src="img/logo.png" alt="logo">
-        <div>DMJ Recycling</div>
+      <div class="logo">
+        <div>DMJ RECYCLING</div>
       </div>
       <div class="nav">
-        <div class="nav1" onclick="homeScroll()">
-          Home
-        </div>
-        <div class="nav2" onclick="aboutUsScroll()">
+        <div class="nav1" onclick="aboutUsScroll()">
           About Us
         </div>
-        <div class="nav3" onclick="serviceScroll()">
-          Service
+        <div class="nav2" onclick="sellToUsScroll()">
+          Sell To Us
+        </div>
+        <div class="nav3" onclick="servicesScroll()">
+          Services
         </div>
         <div class="nav4" onclick="contactScroll()">
           Contact
@@ -30,7 +29,7 @@
       </div>
     </header>
     <section class="contactHeader">
-      <div>Contact Us</div>
+      <div>Sell to us – Instant payment – Call on 07808 262 891 – Reading – London – Luton – Gatwick </div>
     </section>
     <main>
       <div class="mainTitle">
@@ -53,19 +52,52 @@
       </div>
       <img src="img/van.jpg" alt="van" style="height: 50vh; width: 40vh;">
     </section>
-    <section class="service">
+    <section class="sellToUs">
+      <img src="img/van.jpg" alt="van" style="height: 50vh; width: 40vh; float: left; padding-top: 15vh; padding-left: 17vw;">
       <div class="text">
-        <h1>We buy all type of scrap metal & cables including:</h1>
-        <p>– Aluminium – Copper – Brass</br>– Lead – Stainless Steel – Cables</p>
+        <h1>Sell to us</h1>
+        <p>Do you have scrap metal or cables for sale? Contact us on 07808 262 891 (call, text message, WhatsApp) and we will arrange a convenient time to collect it from your place (construction sites, demolition sites, houses, garages etc). We use very precision scale to weight scrap metal. You can be sure that you will get top prices and the instant payment for your scrap metal.</p>
       </div>
-      <div class="text">
-        <h1>We provide free collection service from: </h1>
-        <p>– construction sites,</br>– demolition sites,</br>– houses, etc.</p>
+    </section>
+    <section class="services">
+      <div class="textContainer" style="float: left;">
+        <div class="text">
+          <h1>We buy all type of scrap</br> metal & cables including:</h1>
+          <p>– Aluminium – Copper – Brass</br>– Lead – Stainless Steel – Cables</p>
+        </div>
+        <div class="text">
+          <h1>We provide free collection</br> service from: </h1>
+          <p>– construction sites,</br>– demolition sites,</br>– houses, etc.</p>
+        </div>
       </div>
-      <footer><h1>We pay top prices and offer instant payment.</h1></footer>
+      <img src="img/van.jpg" alt="van" style="height: 50vh; width: 40vh; float: left; padding-top: 20vh;">
+      <footer style="clear: both;"><h1>We pay top prices and offer instant payment.</h1></footer>
     </section>
     <section class="contact">
-
+      <div class="text">
+        <div class="left">
+          <div class="phone">
+            <h1>PHONE</h1>
+            <p style="padding-bottom: 10vh;">07808 262 891</p>
+          </div>
+          <div class="hours">
+            <h1>OPENING HOURS</h1>
+            <p>Mon To Sat 8am - 6pm</br> Sun 10am - 4pm</p>
+          </div>
+        </div>
+        <div class="middle">
+          <div class="address">
+            <h1>OFFICE ADDRESS</h1>
+            <p>DMJ Recycling Ltd</br> 50 Birch Grove</br> Slough</br> Berkshire</br> SL2 1EP</br> Company number 13614972</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="facebook">
+            <h1>FOLLOW US ON FACEBOOK</h1>
+            <p>Facebook link</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script type="text/javascript">
@@ -78,6 +110,18 @@
 
     function aboutUsScroll() {
       document.querySelector(".aboutUs").scrollIntoView({behavior: 'smooth'});
+    }
+
+    function sellToUsScroll() {
+      document.querySelector(".sellToUs").scrollIntoView({behavior: 'smooth'});
+    }
+
+    function servicesScroll() {
+      document.querySelector(".services").scrollIntoView({behavior: 'smooth'});
+    }
+
+    function contactScroll() {
+      document.querySelector(".contact").scrollIntoView({behavior: 'smooth'});
     }
     </script>
   </body>
