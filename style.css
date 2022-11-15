@@ -101,7 +101,7 @@ main .mainTitle p {
 }
 
 main img {
-  padding-top: 16vh;
+  padding-top: 10vh;
 }
 
 section.aboutUs {
@@ -131,7 +131,7 @@ section.aboutUs .text p {
 }
 
 section.aboutUs img {
-  padding-top: 15vh;
+  padding-top: 10vh;
   padding-left: 10vw;
 }
 
@@ -183,7 +183,7 @@ section.services h1 {
 }
 
 section.services footer h1 {
-  text-align: center;
+  padding-left: 10vw;
   padding-top: 10vh;
 }
 
