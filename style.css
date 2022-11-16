@@ -21,6 +21,7 @@ header {
 header .logo {
   float: left;
   width: 45vw;
+  cursor: pointer;
 }
 
 header .logo div {
@@ -128,6 +129,7 @@ section.aboutUs .text h1 {
 section.aboutUs .text p {
   font-size: 3vh;
   color: #064848;
+  text-align: justify;
 }
 
 section.aboutUs img {
@@ -157,6 +159,7 @@ section.sellToUs .text h1 {
 section.sellToUs .text p {
   padding-top: 3vh;
   font-size: 3vh;
+  text-align: justify;
 }
 
 section.services {
@@ -173,7 +176,11 @@ section.services .textContainer {
 }
 
 section.services .text {
-  padding-top: 10vh;
+  padding-top: 5vh;
+}
+
+section.services .text:first-child {
+  padding-top: 15vh;
 }
 
 section.services h1 {
@@ -184,7 +191,6 @@ section.services h1 {
 
 section.services footer h1 {
   padding-left: 10vw;
-  padding-top: 10vh;
 }
 
 section.services .text p {
